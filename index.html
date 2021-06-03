@@ -4,13 +4,17 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- initialising the interest rate slider-->
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        Amount <input type="number"  id="principal" min="0"> <br/>
+        Interest Rate <input type="range"  id="rate" min="0" max="100" onchange="slider(this.value)">
+                        <span id ="te">50%</span><br/>
+        No. of Years <select id="numy">
+                        <script>numy()</script>
+                     </select><br>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+        <button onclick="compute()">Compute Interest</button>
     </body>
 </html>
