@@ -9,7 +9,14 @@ function compute()
     // calculating the interest amount
     result = p*r/100*y;
 
+    date = new Date().getFullYear();
+    dnew = Number(date) + Number(y);
+    console.log(date);
+    
     document.getElementById("result").innerHTML = result;
+    document.getElementById("principalout").innerHTML = p;
+    document.getElementById("rateour").innerHTML = r + "%" ;
+    document.getElementById("yearout").innerHTML = dnew;
 }
 
 function numy()

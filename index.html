@@ -4,17 +4,34 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!-- initialising the interest rate slider-->
-        <h1>Simple Interest Calculator</h1>
+        <div id="whole"><div>
+            <h1>Simple Interest Calculator</h1></div>
 
-        Amount <input type="number"  id="principal" min="0"> <br/>
-        Interest Rate <input type="range"  id="rate" min="0" max="100" onchange="slider(this.value)">
-                        <span id ="te">50%</span><br/>
-        No. of Years <select id="numy">
-                        <script>numy()</script>
-                     </select><br>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute Interest</button>
+            <div id="amtprincipal"> 
+                Amount <input type="number"  id="principal" min="0"> <br/>
+            </div> 
+            <div id="amtrate">
+                Interest Rate<input type="range" id="rate" step="0.5" min="0" max="25" onchange="slider(this.value)">
+                <span id ="te">12.5%</span><br/>
+            </div>
+            <div id="amtyear">
+                No. of Years <select id="numy">
+                    <script>numy()</script>
+                </select><br>    
+            </div>
+            <div id="button">
+                <button onclick="compute()">Compute Interest</button>    
+            </div>
+            <div id="amtresult">
+                If you deposit <span id="principalout"></span>,<br>
+                at an interest rate of <span id="rateour"></span>.<br>
+                You will recieve an amount of <span id="result"></span>,<br>
+                in the year <span id="yearout"></span>.<br>
+            </div>
+            <div id="cright">
+                <span id="copyright">&#169</span>
+                Everyone Can Get Rich
+            </div>
+        </div>
     </body>
 </html>
