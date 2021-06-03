@@ -6,6 +6,10 @@ function compute()
     r = document.getElementById("rate").value;
     y = document.getElementById("numy").value;
     
+    if (p <= 0){
+        window.alert("Please enter a positive non-zero number for principal amount");
+    }
+    
     // calculating the interest amount
     result = p*r/100*y;
 
