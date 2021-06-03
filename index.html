@@ -1,4 +1,5 @@
 <html>
+    <title>Web App - Simple Interest Calculator</title>
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -11,8 +12,8 @@
                 Amount <input type="number"  id="principal" min="0"> <br/>
             </div> 
             <div id="amtrate">
-                Interest Rate<input type="range" id="rate" step="0.5" min="0" max="25" onchange="slider(this.value)">
-                <span id ="te">12.5%</span><br/>
+                Interest Rate<input type="range" id="rate" step="0.5" min="1" max="20" onchange="slider(this.value)">
+                <span id ="te"></span><br/>
             </div>
             <div id="amtyear">
                 No. of Years <select id="numy">
